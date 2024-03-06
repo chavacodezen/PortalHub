@@ -26,6 +26,8 @@
                             <input class="form-control mb-3" type="text" placeholder="Correo electronico" asp-for="Email" />
                             <input class="form-control mb-3" type="text" placeholder="Numero Telefono" asp-for="PhoneNumber" />
                             <input class="form-control mb-3" type="password" placeholder="Contraseña" asp-for="PasswordHash" required />
+                            <input type="hidden" asp-for="IsActive" value="true" />
+                            <input type="hidden" asp-for="CompanyKey" value="2" />
                             <div class="d-grid gep-2 mb-3">
                                 <button class="btn btn-primary" type="submit">Registrate</button>
                             </div>

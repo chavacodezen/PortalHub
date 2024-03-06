@@ -5,7 +5,6 @@ using System.Security.Claims;
 using PortalHub.Models;
 using PortalHub.Resources;
 using PortalHub.Services.Contract;
-using System.CodeDom;
 
 namespace PortalHub.Controllers
 {
@@ -26,6 +25,16 @@ namespace PortalHub.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(User model)
         {
+            // Check if the Badge already exists in the database
+            bool isBadgeExists = await _userService.UserExists(model.Badge);
+
+            if (isBadgeExists)
+            {
+                ViewData["Mensaje"] = "Este empleado ya fue registrado. Por favor, revise sus datos.";
+                return View();
+            }
+
+            // If the Badge doesn't exist, proceed with user creation
             model.PasswordHash = Utils.EncryptPassword(model.PasswordHash);
 
             User user_created = await _userService.SaveUser(model);
@@ -44,33 +53,38 @@ namespace PortalHub.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> LogIn(string email, string password)
+        public async Task<IActionResult> LogIn(string badge, string password)
         {
-            User user_found = await _userService.GetUser(email, Utils.EncryptPassword(password));
+            User user_found = await _userService.GetUser(badge, Utils.EncryptPassword(password));
 
             if (user_found == null)
             {
-                ViewData["Mensaje"] = "No se encontro al usuario.";
+                ViewData["Mensaje"] = "No se encontró al usuario, verifique sus datos.";
             }
-
-            List<Claim> claims = new List<Claim>()
+            else
             {
-                new Claim(ClaimTypes.Name, user_found.Name)
-            };
+                List<Claim> claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, user_found.Name ?? "UnknownUser")
+                };
 
-            ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-            AuthenticationProperties properties = new AuthenticationProperties()
-            {
-                AllowRefresh = true
-            };
+                ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                AuthenticationProperties properties = new AuthenticationProperties
+                {
+                    AllowRefresh = true
+                };
 
-            await HttpContext.SignInAsync(
-                CookieAuthenticationDefaults.AuthenticationScheme,
-                new ClaimsPrincipal(claimsIdentity),
-                properties
+                await HttpContext.SignInAsync(
+                    CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(claimsIdentity),
+                    properties
                 );
 
-            return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View();
         }
+
     }
 }

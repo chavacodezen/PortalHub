@@ -6,15 +6,15 @@ namespace PortalHub.Services.Implementation
 {
     public class UserService : IUserService
     {
-        private readonly DevTestDbContext _dbContext;
-        public UserService(DevTestDbContext dbContext)
+        private readonly PortalDbContext _dbContext;
+        public UserService(PortalDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public async Task<User> GetUser(string email, string password)
+        public async Task<User> GetUser(string badge, string password)
         {
-            User user_found = await _dbContext.Users.Where(u => u.Email == email && u.PasswordHash == password).FirstOrDefaultAsync();
+            User user_found = await _dbContext.Users.Where(u => u.Badge == badge && u.PasswordHash == password).FirstOrDefaultAsync();
 
             return user_found;
         }
@@ -25,6 +25,11 @@ namespace PortalHub.Services.Implementation
 
             return model;
 
+        }
+
+        public async Task<bool> UserExists(string badge)
+        {
+            return await _dbContext.Users.AnyAsync(u => u.Badge == badge);
         }
     }
 }

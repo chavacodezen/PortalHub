@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PortalHub.Models;
 
-public partial class DevTestDbContext : DbContext
+public partial class PortalDbContext : DbContext
 {
-    public DevTestDbContext()
+    public PortalDbContext()
     {
     }
 
-    public DevTestDbContext(DbContextOptions<DevTestDbContext> options)
+    public PortalDbContext(DbContextOptions<PortalDbContext> options)
         : base(options)
     {
     }

@@ -5,7 +5,8 @@ namespace PortalHub.Services.Contract
 {
     public interface IUserService
     {
-        Task<User>GetUser(string email, string password);
-        Task<User> SaveUser(User model);
+        Task<User>GetUser(string badge, string password);
+        Task<User>SaveUser(User model);
+        Task<bool> UserExists(string badge);
     }
 }
