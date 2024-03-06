@@ -55,7 +55,7 @@ namespace PortalHub.Controllers
 
             List<Claim> claims = new List<Claim>()
             {
-                new Claim(ClaimTypes.Name, user_found.UserName)
+                new Claim(ClaimTypes.Name, user_found.Name)
             };
 
             ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
