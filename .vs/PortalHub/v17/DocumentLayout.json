@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\models\\devtestdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\models\\devtestdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,33 +50,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PortalHub\\Models\\User.cs",
+              "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Models\\User.cs",
+              "RelativeToolTip": "PortalHub\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T20:09:48.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DevTestDbContext.cs",
+              "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Models\\DevTestDbContext.cs",
+              "RelativeDocumentMoniker": "PortalHub\\Models\\DevTestDbContext.cs",
+              "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Models\\DevTestDbContext.cs",
+              "RelativeToolTip": "PortalHub\\Models\\DevTestDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T20:09:14.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\appsettings.json",
               "RelativeDocumentMoniker": "PortalHub\\appsettings.json",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\appsettings.json",
               "RelativeToolTip": "PortalHub\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-06T19:07:52.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Lucerna_KPI.cs",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
               "RelativeDocumentMoniker": "PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
               "RelativeToolTip": "PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA9AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-06T18:45:25.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Views\\KPI\\Create.cshtml",
               "RelativeDocumentMoniker": "PortalHub\\Areas\\Management\\Views\\KPI\\Create.cshtml",
@@ -81,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Lucerna_KPIController.cs",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Controllers\\Lucerna_KPIController.cs",
               "RelativeDocumentMoniker": "PortalHub\\Areas\\Management\\Controllers\\Lucerna_KPIController.cs",
