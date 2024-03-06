@@ -1,7 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using PortalHub.Models;
+using PortalHub.Services.Contract;
+using PortalHub.Services.Implementation;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<DevTestDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("LacroixConnection"));
+});
+builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options => { options.LoginPath = "/Init/LogIn"; options.ExpireTimeSpan = TimeSpan.FromMinutes(30); });
 
 var app = builder.Build();
 
@@ -18,10 +31,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Init}/{action=LogIn}/{id?}");
 
 app.Run();
