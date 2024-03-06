@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PortalHub.Areas.Management.Models
 {
-    [Table("TB_IND_LOG")]
+    [Table("IND_LOG")]
     public class Lucerna_KPI
     {
         [Key]
