@@ -3,12 +3,19 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
+<style>
+    .red-line {
+        background-color: red;
+        height: 2px;
+        width: 100%;
+    }
+</style>
 
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>LogIn</title>
+    <title>Lucerna | Iniciar Sesion</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 <body>
@@ -35,7 +42,7 @@
                                     </div>
                                 </div>
                             }
-                            ¿No tienes una cuenta? <a href="@Url.Action("Register","Init")">Registrate</a>
+                            <p class="text-center">¿No tienes una cuenta? <a href="@Url.Action("Register","Init")">Registrate</a></p>
                         </form>
                     </div>
                 </div>

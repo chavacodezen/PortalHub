@@ -4,6 +4,10 @@
         height: 2px;
         width: 100%;
     }
+
+    .nav-text-color {
+        color: #333;
+    }
 </style>
 
 <!DOCTYPE html>
@@ -11,8 +15,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PortalHub</title>
+    <title>Lucerna | Inicio</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PortalHub.styles.css" asp-append-version="true" />
 </head>
@@ -29,18 +34,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse d-flex flex-column d-sm-inline-flex justify-content-end">
-                    <ul class="navbar-nav flex-grow-1 d-flex">
+                    <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                            <a class="nav-link nav-text-color" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
+                            <a class="nav-link nav-text-color" asp-area="Management" asp-controller="Lucerna_KPI" asp-action="Create"><i class="fas fa-chart-bar"></i> KPI Logs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Management" asp-controller="Lucerna_KPI" asp-action="Create">KPI Logs</a>
+                            <a class="nav-link nav-text-color" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-lock"></i> Privacidad</a>
                         </li>
-                        <li class="nav-item ml-auto">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="LogOut">Cerrar Sesion</a>
+                        <li class="nav-item">
+                            <span class="nav-link nav-text-color">|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-text-color" asp-area="" asp-controller="Home" asp-action="LogOut"><i class="fas fa-door-open"></i> Cerrar Sesion</a>
                         </li>
                     </ul>
                 </div>

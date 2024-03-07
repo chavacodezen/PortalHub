@@ -4,35 +4,21 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<style>
+    .background-image {
+        height: 100vh;
+        background-image: url('/images/Lucerna/Vaso_Leche.png');
+        background-repeat: no-repeat;
+        justify-content: left;
+    }
 
-<h4>Lucerna_KPI</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    .content {
+        text-align: center;
+    }
+</style>
 
-            <div class="form-group">
-                <label asp-for="Badge"></label>
-                <label asp-for="Name"></label>
-            </div>
-
-            <!-- Add more input fields for other properties as needed -->
-
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="background-image">
+    <div class="content">
+        <h1 class="display-4">Bienvenido</h1>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
