@@ -7,6 +7,6 @@ namespace PortalHub.Services.Contract
     {
         Task<User>GetUser(string badge, string password);
         Task<User>SaveUser(User model);
-        Task<bool> UserExists(string badge);
+        Task<bool>UserExists(string badge);
     }
 }

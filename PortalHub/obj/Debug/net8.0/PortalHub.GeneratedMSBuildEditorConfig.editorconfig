@@ -26,8 +26,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\2 - Personal\Apps\PortalHub\PortalHub
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/2 - Personal/Apps/PortalHub/PortalHub/Areas/Management/Views/KPI/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xLUElcQ3JlYXRlLmNzaHRtbA==
+[D:/2 - Personal/Apps/PortalHub/PortalHub/Areas/Management/Views/Lucerna_KPI/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xMdWNlcm5hX0tQSVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/2 - Personal/Apps/PortalHub/PortalHub/Views/Home/Index.cshtml]
