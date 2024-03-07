@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\wwwroot\\images\\Lucerna\\Lucerna_Logo.png",
+      "PackagePath": "staticwebassets\\images\\Lucerna\\Lucerna_Logo.png"
+    },
+    {
+      "Id": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\wwwroot\\images\\Lucerna\\Vaso_Leche.png",
+      "PackagePath": "staticwebassets\\images\\Lucerna\\Vaso_Leche.png"
+    },
+    {
       "Id": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
