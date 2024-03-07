@@ -1,6 +1,23 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<style>
+    .background-image {
+        height: 100vh;
+        background-image: url('/images/Lucerna/Vaso_Leche.png');
+        background-repeat: no-repeat;
+        justify-content: left;
+    }
+
+    .content {
+        text-align: center;
+    }
+</style>
+
+<div class="background-image">
+    <div class="content">
+        <h1>@ViewData["Title"]</h1>
+        <p>Use this page to detail your site's privacy policy.</p>
+    </div>
+</div>
