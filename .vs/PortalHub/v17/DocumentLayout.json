@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\2 - Personal\\Apps\\PortalHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\migrations\\20240308203520_createtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\migrations\\20240308203520_createtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\areas\\management\\views\\lucerna_kpi\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\areas\\management\\views\\lucerna_kpi\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -19,8 +11,12 @@
       "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\areas\\management\\controllers\\lucerna_kpicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\controllers\\initcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\controllers\\initcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240308203520_CreateTables.cs",
-              "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Migrations\\20240308203520_CreateTables.cs",
-              "RelativeDocumentMoniker": "PortalHub\\Migrations\\20240308203520_CreateTables.cs",
-              "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Migrations\\20240308203520_CreateTables.cs",
-              "RelativeToolTip": "PortalHub\\Migrations\\20240308203520_CreateTables.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAswDUAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T20:39:12.007Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -59,54 +42,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Lucerna_KPI.cs",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
               "RelativeDocumentMoniker": "PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
               "RelativeToolTip": "PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T20:15:47.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Views\\Lucerna_KPI\\Create.cshtml",
               "RelativeDocumentMoniker": "PortalHub\\Areas\\Management\\Views\\Lucerna_KPI\\Create.cshtml",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Views\\Lucerna_KPI\\Create.cshtml",
               "RelativeToolTip": "PortalHub\\Areas\\Management\\Views\\Lucerna_KPI\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAeAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-06T23:51:59.737Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Lucerna_KPIController.cs",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Controllers\\Lucerna_KPIController.cs",
               "RelativeDocumentMoniker": "PortalHub\\Areas\\Management\\Controllers\\Lucerna_KPIController.cs",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Controllers\\Lucerna_KPIController.cs",
               "RelativeToolTip": "PortalHub\\Areas\\Management\\Controllers\\Lucerna_KPIController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-06T23:48:43.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "PortalHub\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "PortalHub\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAhAAAA",
+              "DocumentIndex": 3,
+              "Title": "InitController.cs",
+              "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Controllers\\InitController.cs",
+              "RelativeDocumentMoniker": "PortalHub\\Controllers\\InitController.cs",
+              "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Controllers\\InitController.cs",
+              "RelativeToolTip": "PortalHub\\Controllers\\InitController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T20:25:41.791Z",
+              "WhenOpened": "2024-03-08T21:11:24.24Z",
               "EditorCaption": ""
             }
           ]

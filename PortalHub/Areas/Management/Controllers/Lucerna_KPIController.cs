@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PortalHub.Areas.Management.Models;
+using PortalHub.Models;
+using PortalHub.Resources;
 using System.Security.Claims;
 
 namespace PortalHub.Areas.Management.Controllers
@@ -23,6 +25,17 @@ namespace PortalHub.Areas.Management.Controllers
             }
 
             ViewData["userName"] = userName;
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(User model)
+        {
+            ClaimsPrincipal claimUser = HttpContext.User;
+            int employeeNo = model.EmployeeNo;
+
+            ViewData["employeeNo"] = employeeNo;
 
             return View();
         }
