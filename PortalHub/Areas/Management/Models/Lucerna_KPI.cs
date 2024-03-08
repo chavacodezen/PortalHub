@@ -14,17 +14,17 @@ namespace PortalHub.Areas.Management.Models
         public int ID_IND1 { get; set; }
 
         [Required]
-        public DateTime FECHA { get; set; }
+        public DateTime DATE { get; set; }
 
         [Required]
-        public int CANT { get; set; }
+        public int QUANTITY { get; set; }
 
         [Required(ErrorMessage = "El número de empleado es obligatorio.")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Ingrese solo números.")]
         [Range(1, int.MaxValue, ErrorMessage = "El número de empleado debe ser mayor que cero.")]
-        [ForeignKey("NO_EMPLEADO")]
-        public int NO_EMPLEADO { get; set; }
+        [ForeignKey("EMPLOYEE_NO")]
+        public int EMPLOYEE_NO { get; set; }
 
-        public DateTime FECHA_IND { get; set; }
+        public DateTime IND_DATE { get; set; }
     }
 }

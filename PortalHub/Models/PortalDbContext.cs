@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using PortalHub.Areas.Management.Models;
 
 namespace PortalHub.Models;
 
@@ -16,6 +17,7 @@ public partial class PortalDbContext : DbContext
     }
 
     public virtual DbSet<User> Users { get; set; }
+    public virtual DbSet<Lucerna_KPI> Lucerna_KPIs { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
 
@@ -26,9 +28,9 @@ public partial class PortalDbContext : DbContext
             entity.ToTable("USERS");
 
             entity.Property(e => e.Id).HasColumnName("ID");
-            entity.Property(e => e.Badge)
+            entity.Property(e => e.EmployeeNo)
                 .HasMaxLength(20)
-                .HasColumnName("BADGE");
+                .HasColumnName("EMPLOYEE_NO");
             entity.Property(e => e.CompanyKey).HasColumnName("COMPANY_KEY");
             entity.Property(e => e.DepartmentNo).HasColumnName("DEPARTMENT_NO");
             entity.Property(e => e.Email)
@@ -51,6 +53,19 @@ public partial class PortalDbContext : DbContext
                 .HasMaxLength(128)
                 .HasColumnName("USER_NAME");
         });
+
+        modelBuilder.Entity<Lucerna_KPI>(entity =>
+        {
+            entity.ToTable("IND_LOG");
+
+            entity.Property(e => e.ID_LOG).HasColumnName("ID_LOG");
+            entity.Property(e => e.ID_IND1).HasColumnName("ID_IND1");
+            entity.Property(e => e.DATE).HasColumnName("DATE");
+            entity.Property(e => e.QUANTITY).HasColumnName("QUANTITY");
+            entity.Property(e => e.EMPLOYEE_NO).HasColumnName("EMPLOYEE_NO");
+            entity.Property(e => e.IND_DATE).HasColumnName("IND_DATE");
+        });
+
 
         OnModelCreatingPartial(modelBuilder);
     }

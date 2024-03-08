@@ -12,9 +12,9 @@ namespace PortalHub.Services.Implementation
             _dbContext = dbContext;
         }
 
-        public async Task<User> GetUser(string badge, string password)
+        public async Task<User> GetUser(int employeeNo, string password)
         {
-            User user_found = await _dbContext.Users.Where(u => u.Badge == badge && u.PasswordHash == password).FirstOrDefaultAsync();
+            User user_found = await _dbContext.Users.Where(u => u.EmployeeNo == employeeNo && u.PasswordHash == password).FirstOrDefaultAsync();
 
             return user_found;
         }
@@ -27,9 +27,9 @@ namespace PortalHub.Services.Implementation
 
         }
 
-        public async Task<bool> UserExists(string badge)
+        public async Task<bool> UserExists(int employeeNo)
         {
-            return await _dbContext.Users.AnyAsync(u => u.Badge == badge);
+            return await _dbContext.Users.AnyAsync(u => u.EmployeeNo == employeeNo);
         }
     }
 }

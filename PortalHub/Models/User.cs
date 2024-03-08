@@ -21,7 +21,7 @@ public partial class User
 
     public bool? IsActive { get; set; }
 
-    public string? Badge { get; set; }
+    public int EmployeeNo { get; set; }
 
     public string? UserName { get; set; }
 

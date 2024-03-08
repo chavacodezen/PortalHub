@@ -25,16 +25,16 @@ namespace PortalHub.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(User model)
         {
-            // Check if the Badge already exists in the database
-            bool isBadgeExists = await _userService.UserExists(model.Badge);
+            // Check if the EmployeeNo already exists in the database
+            bool isEmployeeNoExists = await _userService.UserExists(model.EmployeeNo);
 
-            if (isBadgeExists)
+            if (isEmployeeNoExists)
             {
                 ViewData["Mensaje"] = "Este empleado ya fue registrado. Por favor, revise sus datos.";
                 return View();
             }
 
-            // If the Badge doesn't exist, proceed with user creation
+            // If the EmployeeNo doesn't exist, proceed with user creation
             model.PasswordHash = Utils.EncryptPassword(model.PasswordHash);
 
             User user_created = await _userService.SaveUser(model);
@@ -53,9 +53,9 @@ namespace PortalHub.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> LogIn(string badge, string password)
+        public async Task<IActionResult> LogIn(int employeeNo, string password)
         {
-            User user_found = await _userService.GetUser(badge, Utils.EncryptPassword(password));
+            User user_found = await _userService.GetUser(employeeNo, Utils.EncryptPassword(password));
 
             if (user_found == null)
             {
