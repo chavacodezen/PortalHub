@@ -38,8 +38,16 @@
                         <li class="nav-item">
                             <a class="nav-link nav-text-color" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-text-color" asp-area="Management" asp-controller="Lucerna_KPI" asp-action="Create"><i class="fas fa-chart-bar"></i> KPI Logs</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-text-color dropdown-toggle" href="#" id="departmentsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i> Departments
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                                <a class="dropdown-item dropdown-toggle-split" href="#" id="managementDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Management</a>
+                                <div class="dropdown-menu-end" aria-labelledby="managementDropdown">
+                                    <a class="dropdown-item" asp-area="Management" asp-controller="Lucerna_KPI" asp-action="Create"><i class="fas fa-chart-bar"></i> KPI Logs</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-text-color" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-lock"></i> Privacidad</a>
@@ -69,6 +77,22 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+<script>
+    $(document).ready(function () {
+        $(".nav-item.dropdown").hover(
+            function () {
+                $(this).addClass("show");
+                $(this).find(".dropdown-menu").addClass("show");
+            },
+            function () {
+                $(this).removeClass("show");
+                $(this).find(".dropdown-menu").removeClass("show");
+            }
+        );
+    });
+</script>
