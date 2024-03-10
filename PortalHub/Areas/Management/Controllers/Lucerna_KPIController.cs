@@ -32,11 +32,6 @@ namespace PortalHub.Areas.Management.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(User model)
         {
-            ClaimsPrincipal claimUser = HttpContext.User;
-            int employeeNo = model.EmployeeNo;
-
-            ViewData["employeeNo"] = employeeNo;
-
             return View();
         }
     }
