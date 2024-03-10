@@ -39,7 +39,7 @@ namespace PortalHub.Controllers
 
             User user_created = await _userService.SaveUser(model);
 
-            if (user_created.Id > 0)
+            if (user_created.IdUser > 0)
                 return RedirectToAction("LogIn", "Init");
 
             ViewData["Mensaje"] = "No se pudo crear el usuario.";
@@ -65,7 +65,7 @@ namespace PortalHub.Controllers
             {
                 List<Claim> claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Name, user_found.Name ?? "UnknownUser")
+                    new Claim(ClaimTypes.Name, user_found.FirstName ?? "UnknownUser")
                 };
 
                 ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

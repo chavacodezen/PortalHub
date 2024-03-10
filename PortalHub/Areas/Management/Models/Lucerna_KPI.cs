@@ -3,15 +3,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PortalHub.Areas.Management.Models
 {
-    [Table("IND_LOG")]
+    [Table("INDICATORS_LOG")]
     public class Lucerna_KPI
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID_LOG { get; set; }
 
-        [ForeignKey("ID_IND1")]
-        public int ID_IND1 { get; set; }
+        [ForeignKey("ID_INDICATOR")]
+        public int ID_INDICATOR { get; set; }
 
         [Required]
         public DateTime DATE { get; set; }
@@ -25,6 +25,6 @@ namespace PortalHub.Areas.Management.Models
         [ForeignKey("EMPLOYEE_NO")]
         public int EMPLOYEE_NO { get; set; }
 
-        public DateTime IND_DATE { get; set; }
+        public DateTime INDICATOR_DATE { get; set; }
     }
 }
