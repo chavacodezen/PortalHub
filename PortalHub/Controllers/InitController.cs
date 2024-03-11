@@ -63,21 +63,15 @@ namespace PortalHub.Controllers
             }
             else
             {
-                List<Claim> claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, user_found.FirstName ?? "UnknownUser")
-                };
-
-                ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                AuthenticationProperties properties = new AuthenticationProperties
-                {
-                    AllowRefresh = true
-                };
+                ClaimsPrincipal claimsPrincipal = await _userService.CreateClaimsPrincipalAsync(user_found);
 
                 await HttpContext.SignInAsync(
                     CookieAuthenticationDefaults.AuthenticationScheme,
-                    new ClaimsPrincipal(claimsIdentity),
-                    properties
+                    claimsPrincipal,
+                    new AuthenticationProperties
+                    {
+                        AllowRefresh = true
+                    }
                 );
 
                 return RedirectToAction("Index", "Home");
@@ -85,6 +79,5 @@ namespace PortalHub.Controllers
 
             return View();
         }
-
     }
 }

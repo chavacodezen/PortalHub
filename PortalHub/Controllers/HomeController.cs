@@ -21,14 +21,16 @@ namespace PortalHub.Controllers
         public IActionResult Index()
         {
             ClaimsPrincipal claimUser = HttpContext.User;
-            string userName = "";
+            string firstName = "";
+            string lastName = "";
 
-            if(claimUser.Identity.IsAuthenticated)
+            if (claimUser.Identity.IsAuthenticated)
             {
-                userName = claimUser.Claims.Where(c=>c.Type == ClaimTypes.Name).Select(c=>c.Value).SingleOrDefault();
+                firstName = claimUser.Claims.Where(c => c.Type == "FirstName").Select(c => c.Value).SingleOrDefault();
+                lastName = claimUser.Claims.Where(c => c.Type == "LastName").Select(c => c.Value).SingleOrDefault();
             }
 
-            ViewData["userName"] = userName;
+            ViewData["userName"] = $"{firstName} {lastName}";
 
             return View();
         }

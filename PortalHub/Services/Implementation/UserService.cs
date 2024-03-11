@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
 using PortalHub.Models;
 using PortalHub.Services.Contract;
+using System.Security.Claims;
 
 namespace PortalHub.Services.Implementation
 {
@@ -30,6 +32,20 @@ namespace PortalHub.Services.Implementation
         public async Task<bool> UserExists(int employeeNo)
         {
             return await _dbContext.Users.AnyAsync(u => u.EmployeeNo == employeeNo);
+        }
+
+        public async Task<ClaimsPrincipal> CreateClaimsPrincipalAsync(User model)
+        {
+            var claims = new List<Claim>
+    {
+        new Claim("FirstName", model.FirstName ?? ""),
+        new Claim("LastName", model.LastName ?? ""),
+        new Claim("EmployeeNo", model.EmployeeNo.ToString()),
+        new Claim("IdDepartment", model.IdDepartment.ToString() ?? ""),
+    };
+
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            return await Task.FromResult(new ClaimsPrincipal(identity));
         }
     }
 }

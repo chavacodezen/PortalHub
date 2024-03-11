@@ -16,6 +16,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Lucerna | Iniciar Sesion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 <body>
@@ -29,8 +30,18 @@
                     </div>
                     <div class="card-body">
                         <form asp-controller="Init" asp-action="LogIn" method="post">
-                            <input class="form-control mb-3" type="number" placeholder="Numero de empleado" required name="EmployeeNo" />
-                            <input class="form-control mb-3" type="password" placeholder="Contraseña" required name="password" />
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <input class="form-control" type="number" placeholder="Numero de empleado" required name="EmployeeNo" />
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                <input class="form-control" type="password" placeholder="Contraseña" required name="password" />
+                            </div>
                             <div class="d-grid gep-2 mb-3">
                                 <button class="btn btn-success" type="submit">Iniciar Sesion</button>
                             </div>

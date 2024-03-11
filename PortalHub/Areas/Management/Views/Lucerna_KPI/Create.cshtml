@@ -27,23 +27,8 @@
         </div>
         <div class="form-group mt-3">
             <label for="employeeNo">Numero de empleado:</label>
-            <input type="text" id="employeeNo" name="employeeNo" value="101" readonly />
-        </div>
-        <div class="form-group mt-3">
-            <label for="employeeNo">Departamento:</label>
-            <input type="text" id="employeeNo" name="employeeNo" value="Automotriz" readonly />
+            <input type="number" id="employeeNo" name="employeeNo" value="@ViewData["employeeNo"]" readonly />
         </div>
         <!-- DROPDOWN INDICADORES -->
-        <div class="form-group mt-3">
-            <label for="userName">Departamentos:</label>
-            <input type="text" placeholder="Almacen" required name="EmployeeNo" />
-        </div>
-        <div class="form-group mt-3">
-            <label for="userName">Cantidad:</label>
-            <input type="text" placeholder="999" required name="EmployeeNo" />
-        </div>
-        <div class="d-flex justify-content-end">
-            <button class="btn btn-success" type="submit">Guardar</button>
-        </div>
     </form>
 </div>
