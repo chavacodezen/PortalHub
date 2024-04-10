@@ -17,10 +17,10 @@ namespace PortalHub.Areas.Management.Controllers
         public IActionResult Create()
         {
             ClaimsPrincipal claimUser = HttpContext.User;
+            int employeeNo = 0;
             string firstName = "";
             string lastName = "";
-            int employeeNo = 0;
-            int idDepartment = 0;
+            string departmentName = "";
 
             if (claimUser.Identity.IsAuthenticated)
             {
@@ -36,13 +36,15 @@ namespace PortalHub.Areas.Management.Controllers
                 string idDepartmentClaim = claimUser.Claims.Where(c => c.Type == "IdDepartment").Select(c => c.Value).SingleOrDefault();
                 if (!string.IsNullOrEmpty(idDepartmentClaim) && int.TryParse(idDepartmentClaim, out int parsedIdDepartment))
                 {
-                    idDepartment = parsedIdDepartment;
+                    departmentName = GetDepartmentNameFromDb(parsedIdDepartment);
                 }
             }
 
-            ViewData["userName"] = $"{firstName} {lastName}";
             ViewData["employeeNo"] = employeeNo;
-            ViewData["idDepartment"] = idDepartment;
+            ViewData["userName"] = $"{firstName} {lastName}";
+            ViewData["firstName"] = firstName;
+            ViewData["lastName"] = lastName;
+            ViewData["departmentName"] = departmentName;
 
             return View();
         }
@@ -52,6 +54,14 @@ namespace PortalHub.Areas.Management.Controllers
         {
             int employeeNo = model.EMPLOYEE_NO;
             return View();
+        }
+
+        private string GetDepartmentNameFromDb(int idDepartment)
+        {
+            // Query the database to get the department name based on idDepartment
+            // Replace this with your actual database query logic
+            // For demonstration, let's assume you have a method to query department name
+            return YourDatabaseService.GetDepartmentName(idDepartment);
         }
     }
 }

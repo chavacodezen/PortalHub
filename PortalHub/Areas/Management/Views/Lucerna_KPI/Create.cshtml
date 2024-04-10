@@ -22,12 +22,20 @@
     <form asp-controller="Lucerna_KPI" asp-action="Create" method="post">
         <h1 class="display-4">Bienvenido al registro de KPIs</h1>
         <div class="form-group mt-5">
-            <label for="userName">Nombre de empleado:</label>
-            <input type="text" id="userName" name="userName" value="@ViewData["userName"]" readonly />
-        </div>
-        <div class="form-group mt-3">
             <label for="employeeNo">Numero de empleado:</label>
             <input type="number" id="employeeNo" name="employeeNo" value="@ViewData["employeeNo"]" readonly />
+        </div>
+        <div class="form-group mt-3">
+            <label for="userName">Nombre:</label>
+            <input type="text" id="firstName" name="firstName" value="@ViewData["firstName"]" readonly />
+        </div>
+        <div class="form-group mt-3">
+            <label for="userName">Apellido:</label>
+            <input type="text" id="lastName" name="lastName" value="@ViewData["lastName"]" readonly />
+        </div>
+        <div class="form-group mt-3">
+            <label for="userName">Departamento:</label>
+            <input type="text" id="idDepartment" name="idDepartment" value="@ViewData["idDepartment"]" readonly />
         </div>
         <!-- DROPDOWN INDICADORES -->
     </form>

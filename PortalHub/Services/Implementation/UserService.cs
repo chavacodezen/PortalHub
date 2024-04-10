@@ -37,12 +37,12 @@ namespace PortalHub.Services.Implementation
         public async Task<ClaimsPrincipal> CreateClaimsPrincipalAsync(User model)
         {
             var claims = new List<Claim>
-    {
-        new Claim("FirstName", model.FirstName ?? ""),
-        new Claim("LastName", model.LastName ?? ""),
-        new Claim("EmployeeNo", model.EmployeeNo.ToString()),
-        new Claim("IdDepartment", model.IdDepartment.ToString() ?? ""),
-    };
+            {
+                new Claim("FirstName", model.FirstName ?? ""),
+                new Claim("LastName", model.LastName ?? ""),
+                new Claim("EmployeeNo", model.EmployeeNo.ToString()),
+                new Claim("IdDepartment", model.IdDepartment.ToString() ?? ""),
+            };
 
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             return await Task.FromResult(new ClaimsPrincipal(identity));

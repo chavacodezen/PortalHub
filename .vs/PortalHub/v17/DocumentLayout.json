@@ -11,24 +11,24 @@
       "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\services\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\controllers\\initcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\controllers\\initcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\services\\contract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\services\\contract\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\controllers\\initcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\controllers\\initcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\areas\\management\\views\\lucerna_kpi\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\areas\\management\\views\\lucerna_kpi\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|d:\\2 - personal\\apps\\portalhub\\portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{951F1C51-3F59-4ED5-84CA-C8CE05D7E2F0}|PortalHub\\PortalHub.csproj|solutionrelative:portalhub\\areas\\management\\models\\lucerna_kpi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,19 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
@@ -60,27 +52,27 @@
               "RelativeDocumentMoniker": "PortalHub\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Controllers\\HomeController.cs",
               "RelativeToolTip": "PortalHub\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T16:06:19.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "InitController.cs",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Controllers\\InitController.cs",
               "RelativeDocumentMoniker": "PortalHub\\Controllers\\InitController.cs",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Controllers\\InitController.cs",
               "RelativeToolTip": "PortalHub\\Controllers\\InitController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAkwFAAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T16:01:05.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Services\\Contract\\IUserService.cs",
               "RelativeDocumentMoniker": "PortalHub\\Services\\Contract\\IUserService.cs",
@@ -99,14 +91,14 @@
               "RelativeDocumentMoniker": "PortalHub\\Services\\Implementation\\UserService.cs",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Services\\Implementation\\UserService.cs",
               "RelativeToolTip": "PortalHub\\Services\\Implementation\\UserService.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAwB8AAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T15:28:57.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Lucerna_KPI.cs",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
               "RelativeDocumentMoniker": "PortalHub\\Areas\\Management\\Models\\Lucerna_KPI.cs",
@@ -119,13 +111,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Views\\Lucerna_KPI\\Create.cshtml",
               "RelativeDocumentMoniker": "PortalHub\\Areas\\Management\\Views\\Lucerna_KPI\\Create.cshtml",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Views\\Lucerna_KPI\\Create.cshtml",
               "RelativeToolTip": "PortalHub\\Areas\\Management\\Views\\Lucerna_KPI\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAA/AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-06T23:51:59.737Z",
               "EditorCaption": ""
@@ -138,7 +130,7 @@
               "RelativeDocumentMoniker": "PortalHub\\Areas\\Management\\Controllers\\Lucerna_KPIController.cs",
               "ToolTip": "D:\\2 - Personal\\Apps\\PortalHub\\PortalHub\\Areas\\Management\\Controllers\\Lucerna_KPIController.cs",
               "RelativeToolTip": "PortalHub\\Areas\\Management\\Controllers\\Lucerna_KPIController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACoAAAA9AAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAswD8AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-06T23:48:43.055Z",
               "EditorCaption": ""

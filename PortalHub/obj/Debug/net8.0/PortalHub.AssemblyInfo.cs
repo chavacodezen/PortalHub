@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PortalHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1888297adf95bd3ae51f5ed8c65f2c8686c26540")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+013ce8141d188919e5e405f80c1fdece80533a7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PortalHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortalHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
